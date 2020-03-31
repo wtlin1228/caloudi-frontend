@@ -1,17 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { Provider } from 'react-redux'
+import configureAppStore, { sagaMiddleware, rootSaga } from 'Store'
+import { ThemeProvider } from 'styled-components'
+import { GlobalStyle, theme } from 'styles'
+import { App, Login } from 'pages'
+import { isLogin } from 'helpers'
+
+const store = configureAppStore()
+sagaMiddleware.run(rootSaga)
+
+function IsLoggedIn() {
+  return isLogin() ? <App /> : <Login />
+}
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <ThemeProvider theme={theme}>
+      <IsLoggedIn />
+      <GlobalStyle />
+    </ThemeProvider>
+  </Provider>,
   document.getElementById('root')
-);
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+)
