@@ -9,10 +9,10 @@ import { connect } from 'react-redux'
 // assets
 
 // actions
-import { offerAsyncActions } from 'Offer'
+import { offerAsyncActions } from 'core/Offer'
 
 // components
-import { useRadioGroup, Table, Button, Modal, Card } from 'components'
+import { useRadioGroup, Table, Button, Modal, Card } from 'view/components'
 
 // self-defined-components
 const RadioGroupsContainer = styled.div`

@@ -8,10 +8,10 @@ import { connect } from 'react-redux'
 // assets
 
 // actions
-import { authAsyncActions } from 'Auth'
+import { authAsyncActions } from 'core/Auth'
 
 // components
-import { LoginForm } from 'components'
+import { LoginForm } from 'view/components'
 
 // self-defined-components
 

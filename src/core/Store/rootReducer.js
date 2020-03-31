@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux'
 
-import { exampleReducer } from 'Example'
-import { authReducer } from 'Auth'
-import { offerReducer } from 'Offer'
+import { exampleReducer } from 'core/Example'
+import { authReducer } from 'core/Auth'
+import { offerReducer } from 'core/Offer'
 
 const rootReducer = combineReducers({
   example: exampleReducer,

@@ -1,6 +1,6 @@
 /* eslint-disable no-param-reassign */
 import { createSlice, createAction } from '@reduxjs/toolkit'
-import { isLogin } from 'helpers'
+import { isLogin } from 'core/helpers'
 
 const authSlice = createSlice({
   name: 'auth',

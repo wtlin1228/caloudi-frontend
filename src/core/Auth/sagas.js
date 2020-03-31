@@ -1,7 +1,7 @@
 import { call, put, takeLatest } from 'redux-saga/effects'
 import authSlice from './slice'
 import { loginAPI } from './apis'
-import { checkStatus, getActionTypes } from 'helpers'
+import { checkStatus, getActionTypes } from 'core/helpers'
 
 function* loginAsync({ payload }) {
   try {
