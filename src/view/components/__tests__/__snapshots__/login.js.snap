@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+<div>
+  <div
+    class="sc-AxgMl iKWKjR"
+  >
+    <form
+      class="sc-AxhCb dbVdvl"
+    >
+      <div
+        class="sc-AxhUy lfhkHP"
+      >
+        <label
+          class="sc-AxheI zyOpI"
+          for="username-input"
+        >
+          Username
+        </label>
+        <input
+          class="sc-AxjAm dSgLgW"
+          id="username-input"
+          name="username"
+          placeholder="Username..."
+          style="flex: 1; margin-bottom: 20px;"
+        />
+        <label
+          class="sc-AxheI zyOpI"
+          id="password-input"
+        >
+          Password
+        </label>
+        <input
+          aria-labelledby="password-input"
+          class="sc-AxjAm dSgLgW"
+          name="password"
+          placeholder="Password..."
+          type="password"
+        />
+      </div>
+      <button
+        class="sc-AxiKw fdWJBE"
+        type="submit"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+`;

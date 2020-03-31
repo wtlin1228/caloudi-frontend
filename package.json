@@ -1,6 +1,8 @@
 {
   "name": "caloudi-frontend",
   "version": "0.1.0",
+  "repository": "git@github.com:wtlin1228/caloudi-frontend.git",
+  "author": "Wei Tang Lin <wtlin1228@gmail.com>",
   "private": true,
   "proxy": "https://caloudi-csp-api-dev.azurewebsites.net",
   "scripts": {
@@ -38,9 +40,11 @@
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jest": "^23.8.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.1",
+    "identity-obj-proxy": "^3.0.0",
     "parcel-bundler": "^1.12.4",
     "prettier": "^1.19.1"
   },

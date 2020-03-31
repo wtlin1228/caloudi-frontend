@@ -37,7 +37,7 @@ const TextArea = styled.textarea`
 const Button = styled.button`
   font-size: 13px;
   font-family: 'Raleway; sans-serif';
-  background: ${props => props.theme.colors.green};
+  background: #5edb93;
   padding: 10px 20px;
   display: block;
   margin-left: auto;
